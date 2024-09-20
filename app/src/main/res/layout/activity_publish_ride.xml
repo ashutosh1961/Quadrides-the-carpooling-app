@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".publishRide">
+
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="200dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="20sp">
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/green_border"
+                    android:orientation="vertical"
+                    android:padding="20sp">
+
+                    <TextView
+                        android:id="@+id/TVdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/arialbd"
+                        android:padding="6dp"
+                        android:text="@string/pickup_date"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/et_date"
+                        android:layout_width="310dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:drawableEnd="@drawable/date_icon"
+                        android:focusable="false"
+                        android:fontFamily="@font/arial"
+                        android:hint="@string/enter_date_when_you_are_going"
+                        android:inputType="date"
+                        android:minHeight="48dp"
+                        android:padding="10dp"
+                        android:textSize="15sp" />
+
+
+                    <TextView
+                        android:id="@+id/TVtime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/arialbd"
+                        android:padding="6dp"
+                        android:text="@string/pickup_time"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/et_time"
+                        android:layout_width="310dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:drawableEnd="@drawable/time_icon"
+                        android:focusable="false"
+                        android:fontFamily="@font/arial"
+                        android:hint="@string/kindly_select_the_appropriate_time"
+                        android:inputType="date"
+                        android:minHeight="48dp"
+                        android:padding="10dp"
+                        android:textSize="15sp" />
+
+
+                    <TextView
+                        android:id="@+id/TVsource"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/arialbd"
+                        android:padding="6dp"
+                        android:text="@string/source"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/et_source"
+                        android:layout_width="310dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:drawableEnd="@drawable/sourcelocation_icon"
+                        android:fontFamily="@font/arial"
+                        android:hint="@string/please_enter_source_location"
+                        android:minHeight="48dp"
+                        android:padding="10dp"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/TVdestination"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/arialbd"
+                        android:padding="6dp"
+                        android:text="@string/destination"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/et_destination"
+                        android:layout_width="310dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:drawableEnd="@drawable/destinationlocation_icon"
+                        android:fontFamily="@font/arial"
+                        android:hint="@string/please_enter_destination_location"
+                        android:minHeight="48dp"
+                        android:padding="10dp"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/TVamount"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/arialbd"
+                        android:padding="6dp"
+                        android:text="@string/amount"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/et_amount"
+                        android:layout_width="310dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:drawableEnd="@drawable/amount_icon"
+                        android:fontFamily="@font/arial"
+                        android:hint="@string/please_enter_the_amount"
+                        android:inputType="number"
+                        android:minHeight="48dp"
+                        android:padding="10dp"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/TVvehicleno."
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/arialbd"
+                        android:padding="6dp"
+                        android:text="@string/vehicle_no"
+                        android:textColor="@color/black"
+                        android:textSize="17sp" />
+
+                    <EditText
+                        android:id="@+id/et_vehicleno"
+                        android:layout_width="310dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:drawableEnd="@drawable/car_icon"
+                        android:fontFamily="@font/arial"
+                        android:hint="e.g., MH 12 AB 1234"
+                        android:inputType="textCapCharacters"
+                        android:minHeight="48dp"
+                        android:padding="10dp"
+                        android:textSize="15sp" />
+
+
+
+    <!--                <TextView
+                        android:id="@+id/textview_gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Vehicle Type*"
+                        android:fontFamily="@font/arialbd"
+                        android:textColor="@color/black"
+                        android:textSize="17dp"
+                        android:padding="6dp"
+                        android:layout_marginStart="10dp"
+                        />
+
+
+
+                    <RadioGroup
+                        android:id="@+id/radio_group_vtype"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:orientation="horizontal"
+                        android:padding="5dp"
+                        >
+
+
+                        <RadioButton
+                            android:id="@+id/radio_car"
+                            android:layout_width="wrap_content"
+                            android:paddingEnd="10dp"
+                            android:layout_height="48dp"
+                            android:text="Car"
+                            android:textSize="20sp"
+                            android:fontFamily="@font/interregular"
+                            android:textColor="@color/black" />
+
+
+                        <RadioButton
+                            android:id="@+id/radio_bike"
+                            android:layout_width="wrap_content"
+                            android:layout_height="48dp"
+                            android:text="Bike"
+                            android:fontFamily="@font/interregular"
+                            android:textSize="20sp"
+                            android:textColor="@color/black" />
+
+
+                    </RadioGroup>
+
+                    ****************************************************
+-->
+
+
+                    <Button
+                        android:id="@+id/publishbtn"
+                        android:layout_width="250dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20sp"
+                        android:background="@drawable/roundback_100"
+                        android:fontFamily="@font/arialbd1"
+                        android:onClick="save"
+                        android:text="@string/publish"
+                        android:textAllCaps="false"
+                        android:textSize="15sp" />
+
+
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+
+
+    </FrameLayout>
+
+
+</ScrollView>

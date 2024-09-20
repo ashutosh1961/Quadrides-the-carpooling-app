@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">MIT carpooling</string>
+    <string name="making_your_ride_enjoyable">Making Your Ride Enjoyable</string>
+    <string name="publish_a_ride">Publish A Ride</string>
+    <string name="find_a_ride">Find a ride</string>
+    <string name="name">name</string>
+    <string name="sign_up">sign up</string>
+    <string name="mobile_number">mobile number</string>
+    <string name="gender">Gender *</string>
+    <string name="female">Female</string>
+    <string name="male">Male</string>
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="createaccount">Createaccount</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="please_enter_the_date">Please enter the date</string>
+    <string name="amount">Amount*</string>
+    <string name="date">Date*</string>
+    <string name="destination">Destination*</string>
+    <string name="vehicle_no">Vehicle No.*</string>
+    <string name="source">Source*</string>
+    <string name="please_enter_source_location">Please enter source location</string>
+    <string name="please_enter_the_amount">Please enter the amount</string>
+    <string name="please_enter_destination_location">Please enter destination location</string>
+    <string name="please_enter_your_vehicle_no">Please enter your vehicle no.</string>
+    <string name="publish">Publish</string>
+    <string name="enter_date_when_you_are_going">Enter date when you are going?</string>
+    <string name="pickup_date">Pickup Date*</string>
+    <string name="pickup_time">Pickup Time*</string>
+    <string name="kindly_select_the_appropriate_time">kindly select the appropriate time</string>
+</resources>

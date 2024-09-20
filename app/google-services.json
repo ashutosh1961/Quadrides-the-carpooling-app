@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "961317207738",
+    "project_id": "mit-carpooling",
+    "storage_bucket": "mit-carpooling.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:961317207738:android:bc3034dd9c275e22dc0c83",
+        "android_client_info": {
+          "package_name": "com.example.mitcarpooling"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDbPcyyHwW0b2Iid6DWfCfP9PbMl5ohjRQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

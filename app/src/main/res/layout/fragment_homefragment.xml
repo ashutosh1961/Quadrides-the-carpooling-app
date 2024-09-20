@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/choose"
+    tools:context=".homefragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <TextView
+        android:layout_width="235dp"
+        android:layout_height="113dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="138dp"
+        android:layout_marginBottom="607dp"
+        android:fontFamily="@font/lemonregular"
+        android:lineSpacingExtra="5dp"
+        android:text="@string/making_your_ride_enjoyable"
+        android:textColor="@color/white"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/publishride"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/publish_a_ride"
+        android:background="@drawable/rounded_circle"
+        android:layout_centerInParent="true"
+        android:textColor="#155766"
+        android:textSize="20sp"
+        android:fontFamily="@font/majer" />
+
+    <Button
+        android:id="@+id/findride"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="@string/find_a_ride"
+        android:background="@drawable/rounded_circle"
+        android:layout_alignBottom="@+id/publishride"
+        android:layout_marginBottom="80dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#155766"
+        android:textSize="20sp"
+        android:fontFamily="@font/majer" />
+
+
+
+</RelativeLayout>

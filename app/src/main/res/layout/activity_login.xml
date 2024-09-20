@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login"
+    tools:context=".login">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="338dp"
+        android:layout_marginBottom="411dp"
+        android:fontFamily="@font/interbolditalic"
+        android:text="Login to your account"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="24sp" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="320dp"
+        android:background="@drawable/rounded_circle"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="5dp"
+        app:endIconMode="clear_text"
+        app:endIconTint="#206B7C"
+        app:placeholderText="ex. ashutosh.kabade@mit.asia"
+        app:placeholderTextColor="#E8A09D9D">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText_login_email"
+            android:layout_width="330dp"
+            android:layout_height="63dp"
+            android:layout_centerHorizontal="true"
+            android:drawableStart="@drawable/baseline_email_24"
+            android:drawableTint="#206B7C"
+            android:enabled="true"
+            android:hint=" email"
+            android:inputType="textEmailAddress"
+            android:outlineProvider="background" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="220dp"
+        android:background="@drawable/rounded_circle"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_marginTop="5dp"
+        android:paddingBottom="5dp"
+        android:layout_centerHorizontal="true"
+        app:passwordToggleEnabled="true">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editText_login_passwd"
+            android:layout_width="330dp"
+            android:layout_height="63dp"
+            android:layout_centerHorizontal="true"
+            android:drawableStart="@drawable/baseline_lock_24"
+            android:drawableTint="#206B7C"
+            android:hint=" password"
+            android:inputType="textPassword"
+            android:outlineProvider="background" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="140dp"
+        android:background="@drawable/round_rectangle"
+        android:text="Login" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:elevation="10dp"
+        android:visibility="gone"
+
+        />
+
+
+
+
+</RelativeLayout>
