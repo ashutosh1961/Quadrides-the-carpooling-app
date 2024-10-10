@@ -20,3 +20,9 @@ public class profilefragment extends Fragment {
         return inflater.inflate(R.layout.fragment_profilefragment, container, false);
     }
 }
+
+ /*   public void startuserprofileActivity() {
+        Intent intent = new Intent(getActivity(), userprofile.class);
+        startActivity(intent);
+    }
+} */

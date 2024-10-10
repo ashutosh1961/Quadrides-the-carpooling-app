@@ -183,8 +183,8 @@ public class publishRide extends AppCompatActivity {
 
 
         mdocRef.collection("Rides")
-                        .add(dataToSave).addOnSuccessListener(documentReference -> Log.d(TAG, "DocumentSnapshot written with ID: " + documentReference.getId()))
-                        .addOnFailureListener(e -> Log.w(TAG, "Error adding document", e));
+                .add(dataToSave).addOnSuccessListener(documentReference -> Log.d(TAG, "DocumentSnapshot written with ID: " + documentReference.getId()))
+                .addOnFailureListener(e -> Log.w(TAG, "Error adding document", e));
 
 
 

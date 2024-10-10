@@ -5,9 +5,7 @@ import android.os.Bundle;
 import android.util.Log;
 
 import androidx.activity.EdgeToEdge;
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -15,10 +13,7 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.DocumentChange;
-import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.EventListener;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.FirebaseFirestoreException;
@@ -35,8 +30,6 @@ public class findRide extends AppCompatActivity {
     MyAdapter myAdapter;
     ProgressDialog progressDialog;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,96 +41,50 @@ public class findRide extends AppCompatActivity {
             return insets;
         });
 
-
-
         progressDialog = new ProgressDialog(this);
         progressDialog.setCancelable(false);
         progressDialog.setMessage("Fetching data...");
         progressDialog.show();
 
-
         recyclerView = findViewById(R.id.recyclerView);
-
-        GridLayoutManager gridLayoutManager = new GridLayoutManager(findRide.this,1);
+        GridLayoutManager gridLayoutManager = new GridLayoutManager(findRide.this, 1);
         recyclerView.setLayoutManager(gridLayoutManager);
 
-    /*    AlertDialog.Builder builder = new AlertDialog.Builder(findRide.this);
-        builder.setCancelable(false);
-        builder.setView(R.layout.loadingprogresslayout);
-        AlertDialog dialog = builder.create();
-        dialog.show();
-*/
         dataList = new ArrayList<>();
-
         myAdapter = new MyAdapter(dataList, findRide.this);
         recyclerView.setAdapter(myAdapter);
 
-        FirebaseFirestore mdocRef = FirebaseFirestore.getInstance();
-        firebaseFirestore.collection("Rides");
-      //  dialog.show();
-
+        firebaseFirestore = FirebaseFirestore.getInstance();
         EventChangeListener();
-
-
     }
-
 
     private void EventChangeListener() {
         firebaseFirestore.collection("Rides")
                 .addSnapshotListener(new EventListener<QuerySnapshot>() {
                     @Override
                     public void onEvent(@Nullable QuerySnapshot value, @Nullable FirebaseFirestoreException error) {
-
-                        if(error != null){
-
-                            if(progressDialog.isShowing())
-                                progressDialog.dismiss();
+                        if (error != null) {
                             Log.e("Firestore error", error.getMessage());
+                            if (progressDialog.isShowing())
+                                progressDialog.dismiss();
                             return;
                         }
 
-                        for (DocumentChange dc : value.getDocumentChanges()){
-                            if(dc.getType() == DocumentChange.Type.ADDED){
-                                DataClass dataClass = dc.getDocument().toObject(DataClass.class);
-                                dataList.add(dataClass);
+                        if (value != null) {
+                            for (DocumentChange dc : value.getDocumentChanges()) {
+                                if (dc.getType() == DocumentChange.Type.ADDED) {
+                                    DataClass dataClass = dc.getDocument().toObject(DataClass.class);
+                                    dataList.add(dataClass);
+                                    Log.d("Firestore", "Data fetched: " + dataClass.getDate() + " " + dataClass.getAmount());
+                                }
                             }
                             myAdapter.notifyDataSetChanged();
-                            if(progressDialog.isShowing())
+
+                            // Dismiss the progress dialog once the data is loaded
+                            if (progressDialog.isShowing())
                                 progressDialog.dismiss();
-
-                            }
-
+                        }
                     }
                 });
-
     }
 }
-
-
-
-
-
-
-
-
- /*       firebaseFirestore mdocRef = db.collection("cities").document("SF");
-        docRef.get().addOnCompleteListener(new OnCompleteListener<DocumentSnapshot>() {
-            @Override
-            public void onComplete(@NonNull Task<DocumentSnapshot> task) {
-                if (task.isSuccessful()) {
-                    DocumentSnapshot document = task.getResult();
-                    if (document.exists()) {
-                        Log.d(TAG, "DocumentSnapshot data: " + document.getData());
-                    } else {
-                        Log.d(TAG, "No such document");
-                    }
-                } else {
-                    Log.d(TAG, "get failed with ", task.getException());
-                }
-            }
-        });
-*/
-
-
-
-
