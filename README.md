@@ -77,7 +77,7 @@ By fostering a sense of community and promoting eco-friendly transportation, Qua
     </ul>
 
 
-<h1>Functions</h1>
+<h1>User Characteristics</h1>
     <ul>
         <li>College Students = Primarily students commuting to and from campus, seeking convenient, affordable rides.  </li><br>
         <li>Environmentally Conscious = Motivated to reduce their carbon footprint through sustainable travel.</li><br>
