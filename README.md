@@ -4,6 +4,14 @@
         <img src="https://github.com/user-attachments/assets/f59a8cd9-59b7-404a-bb00-042142f69974" alt="">
     </p>
 
+
+<h2>Made with love by</h2>
+    <ul>
+        <li>Ashutosh kabade</li>
+        <li>Kedar Hippalge</li>
+        <li>Sahil Maske</li>
+    </ul>
+
     
 
 # Project Overview
