@@ -4,13 +4,25 @@
         <img src="https://github.com/user-attachments/assets/f59a8cd9-59b7-404a-bb00-042142f69974" alt="">
     </p>
 
+<h2>Developed by</h2>
+<ul>
+    <li>
+            </a> Ashutosh Kabade
+        <a href="http://www.linkedin.com/in/ashutoshkabade" target="_blank">
+            <img src="https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white" alt="LinkedIn"> 
+    </li>  
+    <li>
+         </a> Kedar Hippalge
+        <a href="https://www.linkedin.com/in/kedar04?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+            <img src="https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white" alt="LinkedIn"> 
+    </li>
+    <li>
+         </a> Sahil Maske
+        <a href="https://www.linkedin.com/in/sahil-maske-858220254/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+         <img src="https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white" alt="LinkedIn"> 
+    </li>  
+</ul>
 
-<h2>Made with love by</h2>
-    <ul>
-        <li>Ashutosh kabade</li>
-        <li>Kedar Hippalge</li>
-        <li>Sahil Maske</li>
-    </ul>
 
     
 
@@ -37,7 +49,7 @@ By fostering a sense of community and promoting eco-friendly transportation, Qua
 ## First screen
 
  <p align="center">
-        <img src="https://github.com/user-attachments/assets/d0db4fea-26fa-43ca-a2dc-e749f4baa5d9" alt="create plan" height="450" width="225">
+        <img src="https://github.com/user-attachments/assets/722d790c-3d28-4111-926c-5592c194f39b" alt="create plan" height="450" width="225">
     </p>
 
 <h2>Signup and Login Screen </h2>
